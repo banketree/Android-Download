@@ -33,6 +33,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="结束"/>
+
+
+        <Button
+            android:id="@+id/Button_del_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="删除"/>
     </LinearLayout>
 
     <TextView
@@ -61,5 +68,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="结束"/>
+
+        <Button
+            android:id="@+id/Button_del_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="删除"/>
     </LinearLayout>
 </LinearLayout>

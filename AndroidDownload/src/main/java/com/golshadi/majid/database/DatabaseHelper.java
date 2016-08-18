@@ -12,7 +12,7 @@ import com.golshadi.majid.database.constants.TASKS;
  */
 public class DatabaseHelper extends SQLiteOpenHelper {
 
-    private final static String DATABASE_NAME = "com.doitflash.air.extension.downloadManagerPro";
+    private final static String DATABASE_NAME = "com.banketree.downloadManagerPro";
     private final static int DATABASE_VERSION = 5;
 
     private final String CREATE_TABLE_TASKS =

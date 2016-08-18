@@ -63,11 +63,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     mTask2 = mDownloadManagerPro.addTask(System.currentTimeMillis()+"", "http://down11.zol.com.cn/suyan/qqdownloader6.7.1g.apk", false, false);
                 mDownloadManagerPro.startDownload(mTask2);
             } else if (v.getId() == R.id.Button_del_1) {
-                mTask1  = 0;
                 mDownloadManagerPro.delete(mTask1,true);
+                mTask1  = 0;
             } else if (v.getId() == R.id.Button_del_2) {
-               mTask2 = 0;
                 mDownloadManagerPro.delete(mTask2,true);
+                mTask2 = 0;
             } else if (v.getId() == R.id.Button_pause_1) {
                 mDownloadManagerPro.pauseDownload(mTask1);
             } else if (v.getId() == R.id.Button_pause_2) {

@@ -58,8 +58,8 @@ public class DownloadManagerPro {
      *
      * @param context
      */
-    public DownloadManagerPro(Context context){
-        dbHelper = new DatabaseHelper(context);
+    public DownloadManagerPro(Context context,String dbName,int dbVersion){
+        dbHelper = new DatabaseHelper(context,dbName,dbVersion);
 //        dbHelper.close();
 
         // ready database data source to access tables

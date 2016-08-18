@@ -12,9 +12,6 @@ import com.golshadi.majid.database.constants.TASKS;
  */
 public class DatabaseHelper extends SQLiteOpenHelper {
 
-    private final static String DATABASE_NAME = "com.banketree.downloadManagerPro";
-    private final static int DATABASE_VERSION = 5;
-
     private final String CREATE_TABLE_TASKS =
             "CREATE TABLE IF NOT EXISTS "+ TABLES.TASKS + " ("
             + TASKS.COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
@@ -40,8 +37,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             + CHUNKS.COLUMN_COMPLETED + " BOOLEAN "
             + " ); ";
 
-    public DatabaseHelper(Context context) {
-        super(context, DATABASE_NAME, null, DATABASE_VERSION);
+    public DatabaseHelper(Context context,String dbName,int dbVersion) {
+        super(context, dbName, null, dbVersion);
     }
 
     @Override

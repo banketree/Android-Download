@@ -14,6 +14,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     DownloadManagerPro mDownloadManagerPro;
 
 
+    private final static String DATABASE_NAME = "com.banketree.downloadManagerPro";
+    private final static int DATABASE_VERSION = 5;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,7 +31,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.Button_stop_1).setOnClickListener(this);
         findViewById(R.id.Button_stop_2).setOnClickListener(this);
 
-        mDownloadManagerPro = new DownloadManagerPro(this);
+        mDownloadManagerPro = new DownloadManagerPro(this,DATABASE_NAME,DATABASE_VERSION);
         String path = Environment.getExternalStorageDirectory().getPath();
         mDownloadManagerPro.init(path, 12, this);
     }
